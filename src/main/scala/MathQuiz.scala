@@ -3,7 +3,9 @@ import _root_.MathQuiz.{divide, multiply}
 import scala.util.Random
 
 class MathQuiz {
-
+  //TODO get second part of sum and break it out into its components and make a new question
+  // a x b = c => a x d x e = c where d x e = b
+  // a / b = c => a / d / e = c where d / e = b
   def toQuestion(partsOfSum: IndexedSeq[String], operator: String) :String = {
     val missingPart : String = "?"
     operator match {
